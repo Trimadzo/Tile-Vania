@@ -11,4 +11,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void LoadmainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
 }
