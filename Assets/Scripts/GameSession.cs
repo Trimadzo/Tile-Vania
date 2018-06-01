@@ -1,11 +1,18 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
 
     public int playerLives = 3;
+    public int score = 0;
+
+    public Text livesText;
+    public Text scoreText;
+
+    int remainingLives;
 
     private void Awake()
     {
@@ -20,10 +27,26 @@ public class GameSession : MonoBehaviour
         }
     }
 
-
-    void Start()
+            void Start()
     {
+        remainingLives = playerLives - 1;
+        livesText.text = remainingLives.ToString();
+        scoreText.text = score.ToString();
+    }
 
+    private void Update()
+    {
+       int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (currentSceneIndex == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void AddToScore(int pointsToAdd)
+    {
+        score += pointsToAdd;
+        scoreText.text = score.ToString();
     }
 
     public void ProcessPlayerDeath()
@@ -43,6 +66,8 @@ public class GameSession : MonoBehaviour
         playerLives--;
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+        remainingLives = playerLives - 1;
+        livesText.text = remainingLives.ToString();
     }
 
     private void ResetGameSession()

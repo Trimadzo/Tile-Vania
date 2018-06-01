@@ -42062,3 +42062,45 @@ PolygonCollider2D:
       - {x: -38.959606, y: -11.023259}
       - {x: 46.948498, y: -10.957885}
       - {x: 47.010143, y: 21.982199}
+--- !u!1001 &2126264739
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4849210715727560, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849210715727560, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849210715727560, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849210715727560, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849210715727560, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849210715727560, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849210715727560, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849210715727560, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 553a73e1bdcaf29468ad31ad95ff353a, type: 2}
+  m_IsPrefabParent: 0
